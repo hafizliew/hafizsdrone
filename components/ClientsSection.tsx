@@ -4,10 +4,10 @@ import { motion } from "motion/react";
 import Image from "next/image";
 
 const clients = [
-    { name: "PROLINTAS", logo: "/logos/prolintas.png" },
-    { name: "JKR", logo: "/logos/jkr.png" },
+    { name: "PROLINTAS", logo: "/hafizsdrone/logos/prolintas.png" },
+    { name: "JKR", logo: "/hafizsdrone/logos/jkr.png" },
     { name: "PETRONAS", logo: null },
-    { name: "LLM", logo: "/logos/llm.png" },
+    { name: "LLM", logo: "/hafizsdrone/logos/llm.png" },
 ];
 
 export default function ClientsSection() {

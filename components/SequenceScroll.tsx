@@ -37,7 +37,7 @@ export default function SequenceScroll({
         for (let i = 1; i <= frameCount; i++) {
             const img = new Image();
             const frameNumber = String(i).padStart(3, "0");
-            img.src = `/sequence/${framePrefix}${frameNumber}.jpg`;
+            img.src = `/hafizsdrone/sequence/${framePrefix}${frameNumber}.jpg`;
 
             img.onload = () => {
                 loadedCount++;

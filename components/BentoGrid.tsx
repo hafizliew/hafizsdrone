@@ -7,31 +7,31 @@ const services = [
     {
         title: "Aerial Photography",
         description: "Cinematic 4K footage and stunning aerial photography for marketing, events, and real estate.",
-        image: "/images/photography.jpg",
+        image: "/hafizsdrone/images/photography.jpg",
         span: "col-span-2 row-span-2",
     },
     {
         title: "Mapping",
         description: "High-precision orthomosaic maps and 3D models for surveying and construction.",
-        image: "/images/mapping.jpg",
+        image: "/hafizsdrone/images/mapping.jpg",
         span: "col-span-1 row-span-1",
     },
     {
         title: "Inspection",
         description: "Safe and efficient infrastructure inspection for towers, bridges, and industrial facilities.",
-        image: "/images/inspection.jpg",
+        image: "/hafizsdrone/images/inspection.jpg",
         span: "col-span-1 row-span-1",
     },
     {
         title: "Monitoring",
         description: "Continuous surveillance and monitoring solutions for security and asset protection.",
-        image: "/images/monitoring.jpg",
+        image: "/hafizsdrone/images/monitoring.jpg",
         span: "col-span-2 row-span-1",
     },
     {
         title: "3D Modelling & Rendering",
         description: "High-end digital twins and architectural visualizations from aerial data.",
-        image: "/images/3d_modelling_service.png",
+        image: "/hafizsdrone/images/3d_modelling_service.png",
         span: "col-span-1 row-span-1",
     },
 ];

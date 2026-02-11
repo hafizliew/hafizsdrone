@@ -7,37 +7,37 @@ const projects = [
     {
         title: "Lumut Maritime Terminal 2",
         location: "Manjung, Perak",
-        image: "/projects/lumut-terminal.png",
+        image: "/hafizsdrone/projects/lumut-terminal.png",
         category: "Infrastructure",
     },
     {
         title: "Genting Tunnel Progress",
         location: "Gombak",
-        image: "/projects/genting-tunnel.png",
+        image: "/hafizsdrone/projects/genting-tunnel.png",
         category: "Infrastructure",
     },
     {
         title: "Taman Melawati Estate",
         location: "Kuala Lumpur",
-        image: "/projects/project1.jpg",
+        image: "/hafizsdrone/projects/project1.jpg",
         category: "Real Estate",
     },
     {
         title: "Sungai Besi Bridge Inspection",
         location: "Selangor",
-        image: "/projects/project2.jpg",
+        image: "/hafizsdrone/projects/project2.jpg",
         category: "Infrastructure",
     },
     {
         title: "Pahang Agricultural Mapping",
         location: "Pahang",
-        image: "/projects/project3.jpg",
+        image: "/hafizsdrone/projects/project3.jpg",
         category: "Agriculture",
     },
     {
         title: "Industrial Area Surveillance",
         location: "Johor",
-        image: "/projects/project4.jpg",
+        image: "/hafizsdrone/projects/project4.jpg",
         category: "Security",
     },
 ];
