@@ -5,6 +5,12 @@ import Image from "next/image";
 
 const projects = [
     {
+        title: "3D Rendering & Modelling Sabah",
+        location: "Penampang, Sabah",
+        image: "/hafizsdrone/projects/sabah-analysis.png",
+        category: "3D Modelling",
+    },
+    {
         title: "Lumut Maritime Terminal 2",
         location: "Manjung, Perak",
         image: "/hafizsdrone/projects/lumut-terminal.png",
@@ -21,24 +27,6 @@ const projects = [
         location: "Kuala Lumpur",
         image: "/hafizsdrone/projects/project1.jpg",
         category: "Real Estate",
-    },
-    {
-        title: "Sungai Besi Bridge Inspection",
-        location: "Selangor",
-        image: "/hafizsdrone/projects/project2.jpg",
-        category: "Infrastructure",
-    },
-    {
-        title: "Pahang Agricultural Mapping",
-        location: "Pahang",
-        image: "/hafizsdrone/projects/project3.jpg",
-        category: "Agriculture",
-    },
-    {
-        title: "Industrial Area Surveillance",
-        location: "Johor",
-        image: "/hafizsdrone/projects/project4.jpg",
-        category: "Security",
     },
 ];
 
