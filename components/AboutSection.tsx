@@ -56,21 +56,7 @@ export default function AboutSection() {
                     })}
                 </div>
 
-                <div className="mt-20 flex flex-col items-center border-t border-white/5 pt-12">
-                    <p className="text-slate-400 font-mono text-sm uppercase tracking-[0.2em] mb-8">Official Certification</p>
-                    <div className="flex flex-col md:flex-row items-center gap-8 bg-white/5 p-8 rounded-3xl border border-white/10 max-w-2xl">
-                        <div className="relative w-32 h-20">
-                            <Image src="/hafizsdrone/logos/caam-logo.png" alt="CAAM Logo" fill className="object-contain" />
-                        </div>
-                        <div className="text-left">
-                            <h4 className="text-xl font-bold mb-2">RCOC-B Certified by CAAM</h4>
-                            <p className="text-slate-400 text-sm leading-relaxed">
-                                Fully certified for Remote Pilot Competency (B-Category) by the Civil Aviation Authority of Malaysia,
-                                ensuring the highest safety standards and regulatory compliance for all drone operations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
     );

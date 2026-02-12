@@ -38,8 +38,25 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-slate-700 pt-8 text-center text-slate-500">
-                    <p>&copy; 2026 Hafiz&apos;s Drone. All rights reserved.</p>
+                <div className="border-t border-slate-700 pt-12 pb-8">
+                    <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+                        <div className="flex flex-col md:flex-row items-center gap-6 bg-white/5 px-8 py-6 rounded-2xl border border-white/10 max-w-3xl">
+                            <div className="relative w-24 h-16 flex-shrink-0">
+                                <img src="/hafizsdrone/logos/caam-logo.png" alt="CAAM Logo" className="w-full h-full object-contain" />
+                            </div>
+                            <div className="text-left">
+                                <h4 className="text-lg font-bold mb-1">CAAM Certified Pilot</h4>
+                                <p className="text-slate-400 text-xs leading-relaxed max-w-md">
+                                    RCOC-B Certified by Civil Aviation Authority of Malaysia.
+                                    Fully compliant with Malaysian drone regulations for industrial operations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="text-right">
+                            <p className="text-slate-500 text-sm">&copy; 2026 Hafiz&apos;s Drone. All rights reserved.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>

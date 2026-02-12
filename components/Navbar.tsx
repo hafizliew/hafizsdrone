@@ -16,9 +16,6 @@ export default function Navbar() {
                     className="flex items-center gap-3"
                 >
                     <div className="text-2xl font-bold tracking-tight">Hafiz&apos;s Drone</div>
-                    <span className="px-3 py-1 text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-400 border border-blue-500/30 rounded-full">
-                        Certified Pilot
-                    </span>
                 </motion.div>
 
                 <motion.button
