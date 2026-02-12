@@ -23,10 +23,10 @@ const projects = [
         category: "Infrastructure",
     },
     {
-        title: "Taman Melawati Estate",
+        title: "Prolintas Infrastructure",
         location: "Kuala Lumpur",
-        image: "/hafizsdrone/projects/project1.jpg",
-        category: "Real Estate",
+        image: "/hafizsdrone/projects/prolintas.jpg",
+        category: "Inspection",
     },
 ];
 
