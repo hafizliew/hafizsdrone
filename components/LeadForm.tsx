@@ -3,9 +3,17 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
+interface FormData {
+    name: string;
+    email: string;
+    phone: string;
+    category: "Inspection" | "Mapping" | "Event" | "Other";
+    message: string;
+}
+
 export default function LeadForm() {
     const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         name: "",
         email: "",
         phone: "",
@@ -107,7 +115,7 @@ export default function LeadForm() {
                         <select
                             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none"
                             value={formData.category}
-                            onChange={(e: ChangeEvent<HTMLSelectElement>) => setFormData({ ...formData, category: e.target.value })}
+                            onChange={(e: ChangeEvent<HTMLSelectElement>) => setFormData({ ...formData, category: e.target.value as FormData["category"] })}
                         >
                             <option value="Inspection">Inspection (Roof/Tower/Solar)</option>
                             <option value="Mapping">Mapping & Surveying</option>
