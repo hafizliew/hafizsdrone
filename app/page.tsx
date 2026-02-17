@@ -10,6 +10,7 @@ import StatsSection from "@/components/StatsSection";
 import ClientsSection from "@/components/ClientsSection";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import LeadForm from "@/components/LeadForm";
 
 export default function Home() {
     useLenis();
@@ -30,6 +31,7 @@ export default function Home() {
                 <ProjectsSection />
                 <StatsSection />
                 <ClientsSection />
+                <LeadForm />
                 <Footer />
             </div>
         </main>
