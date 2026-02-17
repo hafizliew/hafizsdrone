@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, ChangeEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 export default function LeadForm() {
@@ -13,11 +13,9 @@ export default function LeadForm() {
         message: ""
     });
 
-    // PASTE YOUR TUNNEL URL HERE AFTER STARTING DOCKER
-    // Example: https://weird-name-random-word.trycloudflare.com/webhook/lead-capture
     const WEBHOOK_URL = "https://oxide-aye-acknowledge-realtors.trycloudflare.com/webhook/lead-capture";
 
-    const handleSubmit = async (e: FormEvent) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setStatus("submitting");
 
@@ -76,7 +74,7 @@ export default function LeadForm() {
                                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                 placeholder="Your Name"
                                 value={formData.name}
-                                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
                             />
                         </div>
                         <div className="space-y-2">
@@ -87,7 +85,7 @@ export default function LeadForm() {
                                 className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                                 placeholder="+60 12-345 6789"
                                 value={formData.phone}
-                                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, phone: e.target.value })}
                             />
                         </div>
                     </div>
@@ -100,7 +98,7 @@ export default function LeadForm() {
                             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
                             placeholder="email@company.com"
                             value={formData.email}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, email: e.target.value })}
                         />
                     </div>
 
@@ -109,7 +107,7 @@ export default function LeadForm() {
                         <select
                             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all appearance-none"
                             value={formData.category}
-                            onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                            onChange={(e: ChangeEvent<HTMLSelectElement>) => setFormData({ ...formData, category: e.target.value })}
                         >
                             <option value="Inspection">Inspection (Roof/Tower/Solar)</option>
                             <option value="Mapping">Mapping & Surveying</option>
@@ -126,7 +124,7 @@ export default function LeadForm() {
                             className="w-full bg-slate-950 border border-slate-800 rounded-lg px-4 py-3 text-white focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
                             placeholder="Tell us about the location and requirements..."
                             value={formData.message}
-                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                            onChange={(e: ChangeEvent<HTMLTextAreaElement>) => setFormData({ ...formData, message: e.target.value })}
                         />
                     </div>
 
