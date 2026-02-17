@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, FormEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 export default function LeadForm() {
@@ -17,7 +17,7 @@ export default function LeadForm() {
     // Example: https://weird-name-random-word.trycloudflare.com/webhook/lead-capture
     const WEBHOOK_URL = "https://oxide-aye-acknowledge-realtors.trycloudflare.com/webhook/lead-capture";
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: FormEvent) => {
         e.preventDefault();
         setStatus("submitting");
 
@@ -133,8 +133,8 @@ export default function LeadForm() {
                     <button
                         disabled={status === "submitting" || status === "success"}
                         className={`w-full py-4 rounded-xl font-bold text-lg transition-all transform active:scale-95 ${status === "success"
-                                ? "bg-emerald-500 text-white"
-                                : "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-500/20"
+                            ? "bg-emerald-500 text-white"
+                            : "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-500/20"
                             }`}
                     >
                         {status === "submitting" ? (
