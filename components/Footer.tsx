@@ -1,4 +1,7 @@
+import Image from "next/image";
+
 export default function Footer() {
+
     return (
         <footer id="contact" className="relative px-6 md:px-12 py-24 overflow-hidden">
             <div className="footer-bg" />
@@ -42,7 +45,7 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row items-center justify-between gap-8">
                         <div className="flex flex-col md:flex-row items-center gap-6 bg-white/5 px-8 py-6 rounded-2xl border border-white/10 max-w-3xl">
                             <div className="relative w-24 h-16 flex-shrink-0">
-                                <img src="/hafizsdrone/logos/caam-logo.png" alt="CAAM Logo" className="w-full h-full object-contain" />
+                                <Image src="/hafizsdrone/logos/caam-logo.png" alt="CAAM Logo" fill className="object-contain" />
                             </div>
                             <div className="text-left">
                                 <h4 className="text-lg font-bold mb-1">CAAM Certified Pilot</h4>

@@ -166,7 +166,7 @@ export default function LeadForm() {
                                 exit={{ opacity: 0, height: 0 }}
                                 className="text-emerald-400 text-center text-sm"
                             >
-                                We'll analyze your request and WhatsApp you a quote within 2 minutes!
+                                We&apos;ll analyze your request and WhatsApp you a quote within 2 minutes!
                             </motion.p>
                         )}
                         {status === "error" && (
